@@ -1,0 +1,122 @@
+.container00 {
+    &.container08{
+        background-image: url(/img/correta.jpg);
+    }
+
+    &.container09{
+        background-image: url(/img/terra.jpg);
+    }
+
+    &.container10{
+        background-image: url(/img/satelite.jpg);
+    }
+
+    &.container11{
+        background-image: url(/img/lua.jpg);
+    }
+
+    &.container12{
+        background-image: url(/img/vermelho.jpg);
+    }
+}
+
+.container01Content {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        font-size: 100px;
+    }
+
+    p {
+        margin-top: 20px;
+        margin-bottom: 50px;
+        font-size: 25px;
+        letter-spacing: 15px;
+    }
+
+    img {
+        width: 130px;
+    }
+}
+
+.eartDesc {
+    background-color: black;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    p {
+        color: $link-hover;
+        font-weight: 400;
+        font-size: 19px;
+        width: 800px;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+        
+        &:hover {
+            color: $copy-color;
+        }
+    }
+}
+
+.containerRigthContent {
+    margin-left: 55%;
+    padding-top: 15%;
+}
+
+.containerLeftContent {
+    margin-left: 5%;
+    padding-top: 15%;
+}
+
+.titleSection {
+    font-size: 35px;
+}
+
+.subTitle {
+    font-weight: 400;
+    margin-bottom: 25px
+}
+
+
+// Media Querry
+@media (max-width: 740px) {
+    .eartDesc {
+
+        height: 35vh;
+
+        p {
+            font-size: 15px;
+            width: auto;
+        }
+    }
+}
+
+@media (max-width: 612px) {
+    .container01Content {
+        h1 {
+            font-size: 50px;
+        }
+
+        p {
+            letter-spacing: 9px;
+            font-size: 20px;
+        }
+    }
+}
+
+@media (max-width: 400px) {
+
+    #btnExplorer {
+        padding: 10px 20px !important;
+    }
+
+}

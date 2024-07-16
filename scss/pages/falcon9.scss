@@ -1,0 +1,157 @@
+.container00 {
+    &.container05 {
+      background-image: url(/img/a.jpg);
+    }
+    &.container06 {
+      background-image: url(/img/b.jpg);
+    }
+    &.container07 {
+      background-image: url(/img/h.jpg);
+    }
+    &.carrossel01 {
+      background-image: url(/img/c.jpg);
+    }
+    &.carrossel02 {
+      background-image: url(/img/d.jpg);      
+    }
+    &.carrossel03 {
+      background-image: url(/img/e.jpg);      
+    }
+    &.carrossel04 {
+      background-image: url(/img/f.jpg);      
+    }
+    &.carrossel05 {
+      background-image: url(/img/g.jpg);     
+    }
+}
+
+.titleFalcon9 {
+  font-size: 90px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 514;
+}
+
+.numbers {
+  background-color: black;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.subTitleNumb {
+  font-size: 20px;
+}
+
+
+.containerFalcon9Desc {
+  display: grid;
+  height: 90vh;
+  align-items: center;
+  justify-content: left;
+}
+
+.falcon9Desc {
+  font-size: 20px;
+  width: 620px;
+  line-height: 50px;
+}
+
+
+#overViewPosition {
+  width: 500px;
+  margin-left: 13%;
+  padding-top: 15%;
+}
+
+.carrosselSlide {
+  img {
+    height: 100vh;
+  }
+
+  .carousselText {
+    background-color: black;
+  }
+}
+
+
+.footer {
+  background-color: black;
+  height: 15vh;
+  font-size: 12px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  a {
+    text-decoration: none;
+    color: white;
+
+    &:hover {
+      color: $link-hover;
+    }
+
+    .copyOBC {
+      color: $copy-color;
+    }
+  }
+}
+
+td {
+  background-color: transparent !important;
+  color: white !important;
+}
+// Medias Querry
+
+@media(max-width: 768px) {
+  .subTitleNumb {
+    font-size: 14px;
+  }
+
+  .falcon9Desc {
+    width: auto;
+  }
+
+  .downloadDesc {
+    padding-top: 150px;
+  }
+}
+
+@media (max-width: 575px) {
+  #widthTable {
+    width: auto;
+  }
+
+  #overViewPosition {
+    width: auto;
+  }
+
+  .downloadDesc {
+    padding-top: 100px;
+
+    button {
+      margin-bottom: 20px;
+    }
+  }
+
+  .numbers {
+    background-color: black;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .titleFalcon9 {
+    font-size: 50px;
+  }
+
+}
+
+@media(max-width: 324px) {
+  .logoOB {
+    width: 100px;
+  }
+}
+

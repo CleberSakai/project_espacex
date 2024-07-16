@@ -1,0 +1,105 @@
+//  Configuração padrão de todas as nav bar das paginas
+.header {
+    font-size: 12px;
+    font-weight: bold;
+
+    #navItem {
+
+        
+
+        &:hover {
+            color: $link-hover;
+        }
+    }
+}
+
+// Configurações padrão de todas as seções da paginas
+.container00 {
+    min-height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+// Configuração das setas nas paginas
+.arrowDown {
+    display: inline-block;
+    width: 90px;
+    margin-top: 5px;
+}
+
+// Configuração da imagem que fica na navBar
+.logoOB {
+    width: 240px;
+    margin-left: -10px;
+    margin-right: 40px;
+}
+
+#button {
+    padding: $padding-button;
+    border: 2px solid white;
+}
+
+// Configurando o footer das paginas
+.footer {
+    background-color: black;
+    height: 15vh;
+    font-size: 12px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    a {
+        text-decoration: none;
+        color: white;
+
+        &:hover {
+            color: $link-hover;
+        }
+    }
+
+    .copyOBC {
+        color: $copy-color;
+    }
+}
+
+// Configurando a seção de downloads da pagina
+.downloadDesc {
+    background-color: black;
+    height: 85vh;
+    padding-top: 300px;
+
+    a {
+        text-decoration: none;
+        color: $link-hover;
+    }
+
+    button {
+        border: 2px solid white;
+        margin-right: 10px;
+    }
+}
+
+// Media querry
+
+@media (max-width: 415px) {
+    .logoOB {
+        width: 180px;
+        margin-top: 15px;
+    }
+
+    .footer {
+        font-size: 10px;
+    }
+};
+
+
+@media(max-width: 354px) {
+    .logoOB {
+        width: 150px;
+        margin-top: 15px;
+    }
+};
+
+
